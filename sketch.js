@@ -1,3 +1,5 @@
+//jogo da bruxa
+
 let imagemCenario;
 let imagemPersonagem;
 let imagemInimigo;
