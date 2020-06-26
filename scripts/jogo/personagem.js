@@ -27,13 +27,14 @@ class Personagem extends Animacao {
     const colisao = collideRectCircle(this.x, this.y, this.largura * precisao, this.altura * precisao,
       inimigo.x + (inimigo.largura / 2) + 5, inimigo.y + (inimigo.altura / 2), inimigo.largura);
 
-    //pra ver as hitboxes  
+
     /*
-    fill(255, 0, 255, 50);
+    fill(255, 0, 0, 50);
     rect(this.x + 6, this.y, this.largura * precisao, 8 + this.altura * precisao, );
     //rect(inimigo.x, inimigo.y, inimigo.largura * precisao, inimigo.altura * precisao);
     circle(inimigo.x + (inimigo.largura / 2) + 5, inimigo.y + (inimigo.altura / 2), inimigo.largura);
     */
+    //pra ver as hitboxes 
     return colisao;
   }
 }
