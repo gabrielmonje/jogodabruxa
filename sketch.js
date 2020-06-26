@@ -1,4 +1,3 @@
-
 let imagemCenario;
 let imagemPersonagem;
 let imagemInimigo;
@@ -83,31 +82,15 @@ function draw() {
   inimigo.exibe();
   inimigo.move();
 
-  if(personagem.colidindo(inimigo)) {
+  if (personagem.colidindo(inimigo)) {
     console.log('colidiu');
   }
 
 }
 
 function keyPressed() {
-  if(key === 'ArrowUp') {
+  if (key === 'ArrowUp') {
     personagem.pula();
     somPulo.play();
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
