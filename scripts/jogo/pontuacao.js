@@ -4,16 +4,16 @@ class Pontuacao {
     }
 
     exibe() {
-    textAlign(RIGHT, BOTTOM);
-    textStyle(BOLD);
-    stroke(10, 30, 10,85);
-    strokeWeight(6);
-    fill(250, 240, 250);
-    textSize(60);
+        textAlign(RIGHT, BOTTOM);
+        textStyle(BOLD);
+        stroke(10, 30, 10, 85);
+        strokeWeight(6);
+        fill(250, 240, 250);
+        textSize(60);
         text(parseInt(this.pontos), width - 80, 90);
     }
 
-    adicionarPontos(){
+    adicionarPontos() {
         this.pontos = this.pontos + 0.2;
     }
 }

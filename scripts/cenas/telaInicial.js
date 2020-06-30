@@ -13,8 +13,8 @@ class TelaInicial {
     }
 
     _texto() {
-        fill(0,0,0,210);
-        textAlign(CENTER,BOTTOM);
+        fill(0, 0, 0, 210);
+        textAlign(CENTER, BOTTOM);
         textFont(fonteTelaInicial);
         textSize(50);
         text("As aventuras da", width / 2, height / 2);

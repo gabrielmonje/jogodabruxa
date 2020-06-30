@@ -5,12 +5,12 @@ function setup() {
   jogo = new Jogo();
   jogo.setup();
   frameRate(40);
-  
+
   cenas = {
     telaInicial,
     jogo,
   };
-  botaoGerenciador = new BotaoGerenciador('Iniciar', width/2, height/2);
+  botaoGerenciador = new BotaoGerenciador('Iniciar', width / 2, height / 2);
 }
 
 function draw() {
