@@ -10,7 +10,7 @@ class Jogo {
 
     personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 25, 110, 135, 220, 270);
     const gotinha = new Inimigo(matrizGotinha, imagemGotinha, width - 52, 25, 52, 52, 104, 104, 8, 100);
-    const troll = new Inimigo(matrizTroll, imagemTroll, width - 52, 0, 200, 200, 400, 400, 4, 100);
+    const troll = new Inimigo(matrizTroll, imagemTroll, width - 52, 0, 200, 200, 400, 400, 14, 100);
     const gotinhaVoadora = new Inimigo(matrizGotinhaVoadora, imagemGotinhaVoadora, width - 52, 170, 100, 75, 200, 150, 10, 100);
 
     inimigos.push(gotinha);
@@ -44,7 +44,7 @@ class Jogo {
       if (this.inimigoAtual > 2) {
         this.inimigoAtual = 0;
       }
-      inimigo.velocidade = parseInt(random(10, 20));
+      inimigo.velocidade = parseInt(random(12, 20));
     }
 
     if (personagem.colidindo(inimigo)) {

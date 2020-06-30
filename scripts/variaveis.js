@@ -1,4 +1,4 @@
-let cenaAtual = "jogo";
+let cenaAtual = "telaInicial";
 let cenas;
 
 let jogo;
