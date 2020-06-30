@@ -4,6 +4,7 @@ class Pontuacao {
     }
 
     exibe() {
+        textFont(fonteTelaInicial);
         textAlign(RIGHT, BOTTOM);
         textStyle(BOLD);
         stroke(10, 30, 10, 85);

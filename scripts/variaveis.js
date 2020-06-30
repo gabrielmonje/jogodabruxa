@@ -1,4 +1,4 @@
-let cenaAtual = "telaInicial";
+let cenaAtual = "jogo";
 let cenas;
 
 let jogo;
@@ -10,7 +10,7 @@ let botaoGerenciador;
 
 let imagemCenario;
 let imagemPersonagem;
-let imagemInimigo;
+let imagemGotinha
 let imagemTroll;
 let imagemGotinhaVoadora;
 let imagemGameOver;
@@ -19,7 +19,7 @@ let somPulo;
 let cenario;
 let somDoJogo;
 let personagem;
-let inimigo;
+let gotinha;
 let troll;
 let gotinhaVoadora;
 let pontuacao;
@@ -44,7 +44,7 @@ const matrizPersonagem = [
   [440, 810],
   [660, 810],
 ];
-const matrizInimigo = [
+const matrizGotinha = [
   [0, 0],
   [104, 0],
   [208, 0],

@@ -37,7 +37,7 @@ class Personagem extends Animacao {
 
     //pra ver as hitboxes 
 
-
+    noStroke();
     fill(255, 0, 0, 50);
     rect(this.x + 6, this.y, this.largura * precisao, 8 + this.altura * precisao, );
     //rect(inimigo.x, inimigo.y, inimigo.largura * precisao, inimigo.altura * precisao);
