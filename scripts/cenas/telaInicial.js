@@ -19,7 +19,7 @@ class TelaInicial {
         textSize(50);
         text("As aventuras da", width / 2, height / 2);
         textSize(100);
-        text("Corninha", width / 2, height / 2 + 120);
+        text("Bruxinha", width / 2, height / 2 + 120);
     }
 
     _botao() {

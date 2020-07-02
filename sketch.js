@@ -4,7 +4,7 @@ function setup() {
   telaInicial = new TelaInicial();
   jogo = new Jogo();
   jogo.setup();
-  frameRate(40);
+  frameRate(30);
 
   cenas = {
     telaInicial,

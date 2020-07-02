@@ -8,6 +8,7 @@ let imagemTelaInicial;
 let fonteTelaInicial;
 let botaoGerenciador;
 
+let imagemVida;
 let imagemCenario;
 let imagemPersonagem;
 let imagemGotinha
@@ -16,6 +17,8 @@ let imagemGotinhaVoadora;
 let imagemGameOver;
 let somPulo;
 
+let inimigo;
+let vida;
 let cenario;
 let somDoJogo;
 let personagem;

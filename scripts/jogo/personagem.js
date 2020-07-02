@@ -7,8 +7,9 @@ class Personagem extends Animacao {
     this.y = this.yBase;
     this.velocidadeDoPulo = 0;
     this.gravidade = 4;
-    this.alturaDoPulo = -35;
+    this.alturaDoPulo = -40;
     this.pulos = 0;
+    this.invuneravel = false;
   }
 
   pula() {
@@ -31,17 +32,28 @@ class Personagem extends Animacao {
   }
 
   colidindo(inimigo) {
+    if(this.invuneravel){
+      return false;
+    }
     const precisao = .8;
     const colisao = collideRectRect(this.x + 6, this.y, this.largura * precisao, this.altura * precisao,
       inimigo.x + 8, inimigo.y + 10, inimigo.largura, inimigo.altura - 20);
 
     //pra ver as hitboxes 
-    noStroke();
+   /* noStroke();
     fill(255, 0, 0, 50);
     rect(this.x + 6, this.y, this.largura * precisao, 8 + this.altura * precisao, );
     fill(0, 255, 0, 50);
     rect(inimigo.x + 8, inimigo.y + 10, inimigo.largura, inimigo.altura - 20);
-
+   */
+    
     return colisao;
+  }
+
+  ficaInvuneravel(){
+    this.invuneravel = true;
+    setTimeout(() => {
+     this.invuneravel = false; 
+    }, 1000)
   }
 }
